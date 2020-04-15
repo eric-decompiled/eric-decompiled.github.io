@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>
+    Halo: The Harbinger of Zero Knowledge - Decompiled
+</title>
+
+
+<link rel="shortcut icon" href="/logo-32.png">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.12b4dc90703f73db34f6e2126b5ef32f0b0f55ee1b213b66af95673cb3bbfb44.css" integrity="sha256-ErTckHA/c9s09uISa17zLwsPVe4bITtmr5VnPLO7&#43;0Q=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"> 
+ 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Halo: The Harbinger of Zero Knowledge"/>
+<meta name="twitter:description" content="Cryptography is the science of protecting messages from adversarial threats. It has been used for millennia by those entrusted with secrets of their state. With the rise of e-commerce it has found broad consumer use. Modern cryptography allows us to protect sensitive information transmitted over public networks such as credit card numbers. Advancements made in cryptography serve as the foundation of the digital economy.
+Traditionally cryptography has been focused on protecting messages in transit as they travel from an originator to their intended recipient."/>
+
+<meta property="og:title" content="Halo: The Harbinger of Zero Knowledge" />
+<meta property="og:description" content="Cryptography is the science of protecting messages from adversarial threats. It has been used for millennia by those entrusted with secrets of their state. With the rise of e-commerce it has found broad consumer use. Modern cryptography allows us to protect sensitive information transmitted over public networks such as credit card numbers. Advancements made in cryptography serve as the foundation of the digital economy.
+Traditionally cryptography has been focused on protecting messages in transit as they travel from an originator to their intended recipient." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://decompiled.dev/crypto/halo/" />
+
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Halo: The Harbinger of Zero Knowledge
+        
+    </title>
+</head>
+
+<body>
+    <nav class="top">
+       <a href="/"><span class="word-mark">Decompiled</span> <img class="logo" src="/logo.svg"></a>
+       <hr />
+    </nav>
+    
+    
+    <header class="wrap flex-container">
+        <h1>Halo: The Harbinger of Zero Knowledge</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>Cryptography is the science of protecting messages from adversarial threats.
+It has been used for millennia by those entrusted with secrets of their state.
+With the rise of e-commerce it has found broad consumer use.
+Modern cryptography allows us to protect sensitive information transmitted
+over public networks such as credit card numbers. Advancements made in cryptography
+serve as the foundation of the digital economy.</p>
+<p>Traditionally cryptography has been focused on protecting messages in transit
+as they travel from an originator to their intended recipient. These techniques
+range from the primitive <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesar&rsquo;s cipher</a>,
+to the more modern <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman</a>.
+Algorithms like Diffie-Hellman allow secrets to be exchanged over an untrusted networks.
+Websites that use this style of encryption get rewarded by browsers which will display a lock icon next to the domain.</p>
+<p>These schemes work by limiting who is able to decipher and extract information from exchanged messages.
+They form the foundation of digital security and will continue to be essential parts of modern life.
+However, as information systems become increasingly influential, new methods of defense are needed.
+The more we use data, the more valuable it becomes. The more value we need to protect, the better our security needs to become.</p>
+<p>Cryptography protects information, individual as well as institutional. As we protect entry into
+our homes and places of employment with locks, we protect access to our information with cryptography.
+Promising advances are being made in the subfield known as zero knowledge. These offer a
+response to the dichotomy of privacy vs security by allowing systems to exchange only necessary
+information.</p>
+<h2 id="knowledge-is-dangerous">Knowledge is Dangerous</h2>
+<p>The power of zero knowledge can be demonstrated the contrast of two questions.
+&ldquo;Are you <a href="https://en.wikipedia.org/wiki/Alice_and_Bob">Alice</a>?&rdquo; and &ldquo;What is your name?&rdquo;
+may serve the same conversational purpose, yet they convey different information.
+One variation exposes the questioner&rsquo;s knowledge, leaving them vulnerable to deceit.
+The other asks the answerer to expose their identity. The parties need to exchange
+information, but neither wants to share knowledge. Zero knowledge proofs are designed to
+convince a distrustful third party of something, without revealing anything you don&rsquo;t have to.</p>
+<p>Thoughtful questions minimize accidentally exchanged information.
+Traditional cryptography protects information by making it undecipherable to observers.
+Zero knowledge protects information by communicating only what is essential. A zero
+knowledge proof satisfies 3 axioms:</p>
+<ol>
+<li>Completeness: A prover will be able to prove they know something</li>
+<li>Soundness: A dishonest prover will be unable to prove what they don&rsquo;t know</li>
+<li>Zero knowledge: During the exchange the verifier learns nothing else</li>
+</ol>
+<p>As a demonstration of conceptual feasibility, consider the need to prove a coin is fair — that it has heads and tails — without
+revealing what the coin looks like. One solution allows the verifier the choice to flip the coin, without the prover
+knowing their choice. The verifier will then ask the prover if the coin was flipped.
+If the coin was double sided the dishonest prover runs the risk of being caught in their lie, while an honest
+one will be able to answer correctly every time.</p>
+<p>We can repeat trials until the probabilities are within acceptable bounds. Each trial means a liar has a 50% chance of
+being caught. Doing this 8 times assigns a 
+1&frasl;256
+ chance of a liar answering successfully by chance. 16 times
+would give 
+1&frasl;65536
+ chance. Soundness is geometrically proportional to the number of trials. An example of
+O(n²) working in our favor.</p>
+<p>This approach, although arduous, allows for engineered solution. Repeated trials would be
+tedious for humans to perform, but this is a task computers are exceptionally good at.
+Its important to understand how these schemes are possible in the simplest cases so we intuit their feasibility
+when applied to more complex cases. Lets consider another example.</p>
+<p>Suppose we had a map and we wanted to prove we only need 3 colors to color it without two bordering regions being the same color.
+The trivial complete and sound proof would be to reveal the coloring scheme. The zero knowledge version uses multiple trials.
+Each trial allows the verifier uncover 2 neighboring regions to confirm they aren&rsquo;t the same color. Each trial they will become
+more certain 3 colors is enough, as one failed trail will uncover a liar. The prover will shuffle the colors between each
+trial to prevent runs from being correlated and revealing their knowledge.</p>
+<p><a href="http://web.mit.edu/~ezyang/Public/graph/svg.html">Try it yourself</a></p>
+<p>Arbitrary soundness can be achieved with an application of <a href="https://en.wikipedia.org/wiki/Bayes%27_theorem">Bayes&rsquo; Theorem</a>.
+We can never be certain, but we can converge on certainty within a limit. Realistically all measurements contain some margin of error.
+Philosophically, all proofs meet with the <a href="https://en.wikipedia.org/wiki/M%C3%BCnchhausen_trilemma">Münchhausen Trilema</a>.</p>
+<p>The three graphs coloring problem is in the <a href="https://en.wikipedia.org/wiki/Complexity_class">complexity class</a> NP complete.
+There are further arguments suggesting that any NP complete problem can represent any other NP complete problem. This leads
+to the paper — <a href="https://link.springer.com/content/pdf/10.1007%2F0-387-34799-2_4.pdf">Everything Provable is Provable in Zero Knowledge</a>.
+This lends credibility to the claim of being able to apply zero knowledge to a wide range of fields.</p>
+<p>Of course taking theoretical possibility and practically applying it is a considerable challenge.
+One potential application for zero knowledge is payments processing. Customers and merchants
+have expectations in line with the 3 axioms of zero knowledge. Currently this is provided by means
+of trustworthy third parties, these incumbents post billions in revenue with enticing margins.</p>
+<h2 id="payment-processing">Payment Processing</h2>
+<p>Suppose the statement is &ldquo;This account has sufficient funds for a given transaction&rdquo;. Merchants need to
+verify this fact, and customers shouldn&rsquo;t be able to lie. A merchant doesn&rsquo;t need to know their customer&rsquo;s
+account balance, but they do need to know if they will be paid.</p>
+<p>The natural solution is to use a trustworthy central party whose business is to solve this exact problem.
+These business are founded on having a strong brand, technology to processes the payments, and coordination
+of legal contracts in numerous jurisdictions. For their services of acting as facilitators, verifiers,
+and confidants the market rewards them remarkably.</p>
+<p>Currently payment processors charge roughly 2% of a transactions value, imposing an hidden to consumer tax
+on the economy. Besides the fees, these providers also amass a trove of sensitive personal information.
+There is little clarity in how this information kept secure, how its being used,
+or if its being sold. That said, they are easy to use and widely accepted. I mention these downsides to
+demonstrate there are theoretically better ways to exchange value. A 2% hidden fee along with
+personal data being mined and possibly sold, isn&rsquo;t free, like the providers would have you believe. They still
+have the best offering on the market.</p>
+<p>The first successful electronic currency without a central authority is <a href="https://en.wikipedia.org/wiki/Bitcoin">Bitcoin</a>.
+As with most original implementations of novel concepts it leaves much to be desired. It consumes
+massive amounts of electricity yet provides small transaction throughput. It also leaves record of all transactions
+between all accounts open for the public to see. This is how the system knows someone has enough balance
+for a transfer. Despite claims otherwise, its the least anonymous currency in light of graph clustering algorithms.
+<a href="https://en.wikipedia.org/wiki/Cryptocurrency_tumbler">Coin tumblers</a> offer services to help provide anonymity.
+However they charge fees, require trust, and using them implies you are up to no good. Zero knowledge offers a solution
+to these privacy issues via cryptography, with a working example known as Zcash.</p>
+<h3 id="zcash-zec">Zcash (ZEC)</h3>
+<p>Zcash was created by a the Electric Coin Company(ECC). Zcash is based on Bitcoin, with the
+addition of zero knowledge to protect user&rsquo;s privacy. Zcash has two types of accounts or addresses,
+referred to as T-address, and Z-address. T-addresses work like Bitcoin, the T stands for transparent. Z to Z transactions
+are the innovative value proposition of Zcash offers and are protected with zero knowledge in their interactions.</p>
+<p>Users can transfer ZEC between Z-addresses on a decentralized, public network, and retain control of who is
+able to access this information. Users can share a view key if they choose to do so. The protection is extended
+to the memo field for <a href="https://www.sec.gov/about/offices/ocie/aml2007/fincen-advissu7.pdf">Travel Rule</a> compliance.</p>
+<p>Like Bitcoin, Zcash is early generation technology. It still cannot compete with traditional cryptography
+combined with a trustworthy brand. One such downside of Zcash is the possibility of counterfit. To ECC&rsquo;s credit,
+they had a <a href="https://electriccoin.co/blog/the-design-of-the-ceremony/">ceremony</a> to mitigate this risk. This needs
+to be repeated for each major protocol upgrade. Moreover public interest has been of financial speculation, and not of cryptographic exploration; Z-addresses have poor adoption rates.</p>
+<p>Also as a store of value there are understandable objections. The founders get 20% of the block rewards.
+I think this should be considered a charitable donation, via inflationary wealth transfer, to a cause that is
+increasingly likely to redefine large sectors of the global economy. Classic economics admits markets are unable to correctly
+price <a href="https://www.investopedia.com/terms/p/public-good.asp">public goods</a>, like cryptography. The founders reward aligns
+the developers with the long term success of the currency, as their compensation is directly tied to the value
+the market assigns the currency.</p>
+<h2 id="halo">Halo</h2>
+<p>Born out of the development of Zcash comes Halo, a protocol that claims to solve some of the previous issues with
+zero knowledge systems. While it still in active development, Halo is a sign of what is possible.
+The <a href="https://eprint.iacr.org/2019/1021.pdf">paper</a> announcing its release mentions the motivating example
+to be the ability to verify arbitrary computation. Beyond solving the trusted setup, the paper also mentions of
+the possibility of clients validating a blockchain by knowing the current state and using a single proof.</p>
+<p>I lack expertise to personally vouch for the merit of this paper. I know of no reputable refutations however.
+It appears to solve the need for the trusted setup previous schemes required. Work like this suggests
+the field is making progress, and the tech will continue to improve.</p>
+<p>While cutting edge research might be exciting, its typically many years away from implementation in products that
+receive market adoption. Learning about zero knowledge lead me to think about a principle I&rsquo;ll call least knowledge.
+I consider it my main take away for learning about this subject.</p>
+<h2 id="philosophy-of-least-knowledge">Philosophy of Least Knowledge</h2>
+<p>Zero knowledge proofs are still under active development, and few people are in a position
+to understand their inner workings. In a sense zero knowledge represents an ideal case. Generally,
+minimizing the replication of data reduces its attack surface, making it more secure.</p>
+<blockquote>
+    
+    
+    
+    
+    Never trust a computer you can't lift
+    
+        <footer>
+            — <cite>Macintosh, 1984 Debut</cite>
+        </footer>
+    
+</blockquote>
+
+<p>Tech companies gather and collect data about their users, with little accountability for its security.
+This may be used to train statistical models, or to sell on data markets. More commonly it sits idle in a
+database. Data is valuable, but its also a liability. Sometimes you can make money with it,
+but its regulated, dangerous to store, and has military applications. Modern systems should be designed
+to minimize their exposure to the risk mindless accumulation of data poses.</p>
+<p>As consumers become more aware the threat wanton proliferation of their data poses, they will begin to
+favor brands that respect and value the confidence placed in them. Privacy concerns around
+are becoming an increasingly common political issue, as seen by <a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">GDPR</a>
+and <a href="https://en.wikipedia.org/wiki/California_Consumer_Privacy_Act">CCPA</a>.</p>
+<p>Zero knowledge proofs represent an ideal of privacy, where the absolute minimum information is exchanged
+between systems. Even if the technology turns out to be unsuitable for widespread adoption, the concept of minimizing the
+exchange of information can protect individual rights to privacy.</p>
+<p>If our information is valuable, then we should naturally be suspicious of it resting on computers we can&rsquo;t touch.
+We currently depend on cryptography to protect our information. As the field new techniques will be available to
+protect against new threats. Even without bleeding edge techniques, we can adopt a philosophy of least knowledge
+to help protect information entrusted to our care.</p>
+<h3 id="credit">Credit</h3>
+<p>The inspiration for this post comes from a <a href="https://www.youtube.com/watch?v=jKSz7W5dTgY">conference talk</a> I attended.
+It gives a historical overview of the history of zero knowledge proofs. It also mentions many papers for
+the curious.</p>
+</article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            <hr />
+<p>
+    <a href="/">Home</a>
+</p>
+
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer"></footer>
+    
+    
+</body>
+
+</html>
