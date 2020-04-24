@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>
+    Matrix: Own your Chatter - Decompiled
+</title>
+
+
+<link rel="shortcut icon" href="/logo-32.png">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.12b4dc90703f73db34f6e2126b5ef32f0b0f55ee1b213b66af95673cb3bbfb44.css" integrity="sha256-ErTckHA/c9s09uISa17zLwsPVe4bITtmr5VnPLO7&#43;0Q=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet"> 
+ 
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Matrix: Own your Chatter"/>
+<meta name="twitter:description" content="Imagine if each email client could only send messages to people using the same client. I might like gmail, but if my boss liked outlook I&rsquo;d have to use that. The fragmented system would cause email to have fraction of the value. If that seems hard to imagine, consider how many instant messaging platforms there are. None of these platforms exchange messages between themselves, despite large investments. The value of communication technology lies in network effects, so it seems strange that this continues to be the case."/>
+
+<meta property="og:title" content="Matrix: Own your Chatter" />
+<meta property="og:description" content="Imagine if each email client could only send messages to people using the same client. I might like gmail, but if my boss liked outlook I&rsquo;d have to use that. The fragmented system would cause email to have fraction of the value. If that seems hard to imagine, consider how many instant messaging platforms there are. None of these platforms exchange messages between themselves, despite large investments. The value of communication technology lies in network effects, so it seems strange that this continues to be the case." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://decompiled.dev/matrix/" />
+
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        Matrix: Own your Chatter
+        
+    </title>
+</head>
+
+<body>
+    <nav class="top">
+       <a href="/"><span class="word-mark">Decompiled</span> <img class="logo" src="/logo.svg"></a>
+       <hr />
+    </nav>
+    
+    
+    <header class="wrap flex-container">
+        <h1>Matrix: Own your Chatter</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>Imagine if each email client could only send messages to people using the same client.
+I might like gmail, but if my boss liked outlook I&rsquo;d have to use that. The fragmented
+system would cause email to have fraction of the value. If that seems hard to imagine,
+consider how many instant messaging platforms there are.
+None of these platforms exchange messages between themselves, despite large investments.
+The value of communication technology lies in network effects, so it seems strange that
+this continues to be the case.</p>
+<p>Fortunately there is a project that aims to solve this issue. <a href="https://matrix.org/">Matrix</a>
+allows for secure self hosted communication. Currently the spec is solidified on a 1.0 version, with a
+feature rich client known as <a href="https://about.riot.im/">Riot</a>, which is recommended to use. Its fully
+featured and has support for voice and video chat, file sharing, among other things.
+Anyone who has used platforms like Slack and Discord will be comfortable with the
+interface. There are other clients available, but Riot is the most developed.</p>
+<h2 id="why-matrix-is-different">Why Matrix is Different</h2>
+<p>Unlike other instant messaging platforms, Matrix focuses on an interoperable protocol with open
+source implementations. Matrix puts the program that would run on a private instant messaging provider&rsquo;s servers, in the hands of anyone
+who cares to download it. If you want your chat service to integrate with other services, like Slack or Discord, there
+are ready made <a href="https://matrix.org/bridges/">bridges</a> for your server to do this. If you are suspicious, you can read the source code
+and build it yourself.</p>
+<p><a href="https://mattermost.com/">Mattermost</a> is an alternative to Matrix in the sense its open source and you can run your own server. Instead
+of focusing on interoperability, it adopts a traditional <a href="https://en.wikipedia.org/wiki/Software_as_a_service">SaaS</a> model. Since they are charging for
+the fully featured version, and is less ambitious in scope. I&rsquo;d imagine its easier and more stable than Matrix.
+With a focus on interoperability and decentralization Matrix differentiates itself from Mattermost. If I didn&rsquo;t think Matrix
+was going to work out for my use case, I&rsquo;d look into Mattermost.</p>
+<p>When signing up for Matrix, you will need to decide on a homeserver. You are welcome to
+host your own. matrix.org offers to host for free, but with the influx of people it tends to be slow.
+There is the option of paid hosting with <a href="https://modular.im/services/matrix-hosting">modular</a>, provided by the creators.
+For the technically inclined, its relatively simple to host your own instance by following these
+<a href="https://upcloud.com/community/tutorials/install-matrix-synapse/">instructions</a>.</p>
+<p>The homeserver will keep your messages, so if it goes down Matrix won&rsquo;t work for you. The server will figure out how to transmit
+messages throughout the Matrix network to the people you communicate with, kinda like email. If you don&rsquo;t want to get bogged down
+in the details, it doesn&rsquo;t matter much what homeserver you choose. You will be able to participate in any conversation on the
+network regardless. Having many servers in a chat means there won&rsquo;t be a single point of failure, leading to a robust design.</p>
+<h2 id="moderation">Moderation</h2>
+<p>The biggest issue with centralized platforms applies to decentralized ones, which is moderation. Currently, centralized
+platforms decide what is allowed to be said or not. With a decentralized one, it will be up to individuals to choose who they
+associate with.</p>
+<p>I don&rsquo;t think a centralized authority is able to deal with this satisfactorily. The volume these platforms deal
+with is beyond comprehension. Twitter has <a href="https://www.omnicoreagency.com/twitter-statistics/">500 million tweets</a> a day for example.
+Any individual decision to remove a tweet is bound to met with criticism of censorship. Personal and organizational prejudice is
+bound to bias tricky judgement calls, scale makes it worse. I think small communities are able to do a better job in this regard.</p>
+<p>I am aware of certain pathological communities, and I have empathy and appreciation for the people whose job is to deal with them.
+I recognize that decentralized communication technology benefits them as much as the rest of society. However, these people represent
+a small segment of the population. Most people want to be thoughtful, productive members of communities.
+I&rsquo;d like to believe that those communities will develop a negative reputation with society at large and will be controlled that way.</p>
+<h2 id="monetization-and-value-creation">Monetization and Value Creation</h2>
+<p>The idea of a billboard transforming depending on the observer, forms the business model of more than one FANG company.
+It was this concept that set the direction for their technological developments. Business drives technology. Without a way to create
+and capture value tech is a mere hobby. Thinking about value creation and capture mechanisms is more important for success than
+technical details in my opinion. I think the key value proposition for Matrix is non-monetary in nature. Given recent events I
+suspect a message of self sufficiency would be effective at getting people to consider Matrix.</p>
+<p>For some organizations, having communication take place on third party servers poses an operational risk. One example is the French Government
+who decided to use Matrix for their internal communications, more info can be found <a href="https://matrix.org/blog/2018/04/26/matrix-and-riot-confirmed-as-the-basis-for-frances-secure-instant-messenger-app">here</a>. I suspect self hosting Matrix will appeal many organizations. Matrix is licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>, so you are allowed to charge
+for providing services with a warranty as long as you assume responsibility.</p>
+<p>Of course there can be pay to enter communities. I don&rsquo;t think this is a good idea, but it illustrates an interesting point in
+psychology. The more expensive its costs to enter a community, the more valuable membership is. A community with a $100 per month
+membership fee will consist entirely of people with at least that much disposable income. The value of entry is the price of entry.
+Linguistically this is a reflexive relation, the subject becomes the object. It&rsquo;s better with a more generalized measure of value.</p>
+<p>If we measure value by the feeling of community, then an online community maximizes its value when its membership is
+in a Goldilocks range. With too few members it feels dead, too many, it feels like Reddit. I think Matrix will find
+many early adopters with people who want real online communities. In my experience, when walking by a stranger, its
+rare to be greeted in a city, yet common in a town. I think people want tightly knit communities, and Matrix seems like a
+good platform to make them on.</p>
+<h2 id="decompiled-community">Decompiled Community</h2>
+<p>To start with I want a comment section for my writing. If people start hanging around then I will consider what else it can be
+done. If you want to talk about this post come join <a href="https://matrix.to/#/!jZNXorvoJygLOvNnAQ:matrix.decompiled.dev?via=matrix.decompiled.dev">#matrix:matrix.decompiled.dev</a></p>
+</article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            <hr />
+<p>
+    <a href="/">Home</a>
+</p>
+
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer"></footer>
+    
+    
+</body>
+
+</html>
