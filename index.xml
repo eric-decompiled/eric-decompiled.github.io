@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decompiled</title>
@@ -6,37 +5,131 @@
     <description>Recent content on Decompiled</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>eric@decompiled.dev (Eric Richardson)</managingEditor>
+    <webMaster>eric@decompiled.dev (Eric Richardson)</webMaster>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://decompiled.dev/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://decompiled.dev/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>http://decompiled.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://decompiled.dev/about/</guid>
-      <description>About Decompiled is dedicated to the public domain. Meaning the work presented at decompiled.dev is as much yours as it is mine. You can do as you wish with it, except claim exclusive ownership.
-Obviously I can&amp;rsquo;t grant ownership of other&amp;rsquo;s intellectual property to the public. I may unwittingly repeat something I read without proper citations. Copy freely, at your own risk. The material presented is intended for educational purposes only, and should in no way be construed as advice in any capacity.</description>
-    </item>
-    
-    <item>
-      <title>Halo: The Harbinger of Zero Knowledge</title>
-      <link>http://decompiled.dev/crypto/halo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://decompiled.dev/crypto/halo/</guid>
-      <description>Cryptography is the science of protecting messages from adversarial threats. It has been used for millennia by those entrusted with secrets of their state. With the rise of e-commerce it has found broad consumer use. Modern cryptography allows us to protect sensitive information transmitted over public networks such as credit card numbers. Advancements made in cryptography serve as the foundation of the digital economy.
-Traditionally cryptography has been focused on protecting messages in transit as they travel from an originator to their intended recipient.</description>
-    </item>
     
     <item>
       <title>Matrix: Own your Chatter</title>
       <link>http://decompiled.dev/matrix/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <author>eric@decompiled.dev (Eric Richardson)</author>
       <guid>http://decompiled.dev/matrix/</guid>
-      <description>Imagine if each email client could only send messages to people using the same client. I might like gmail, but if my boss liked outlook I&amp;rsquo;d have to use that. The fragmented system would cause email to have fraction of the value. If that seems hard to imagine, consider how many instant messaging platforms there are. None of these platforms exchange messages between themselves, despite large investments. The value of communication technology lies in network effects, so it seems strange that this continues to be the case.</description>
+      <description>&lt;p&gt;Imagine if each email client could only send messages to people using the same client.
+I might like gmail, but if my boss liked outlook I&amp;rsquo;d have to use that. The fragmented
+system would cause email to have fraction of the value. If that seems hard to imagine,
+consider how many instant messaging platforms there are.
+None of these platforms exchange messages between themselves, despite large investments.
+The value of communication technology lies in network effects, so it seems strange that
+this continues to be the case.&lt;/p&gt;
+&lt;p&gt;Fortunately there is a project that aims to solve this issue. &lt;a href=&#34;https://matrix.org/&#34;&gt;Matrix&lt;/a&gt;
+allows for secure self hosted communication. Currently the spec is solidified on a 1.0 version, with a
+feature rich client known as &lt;a href=&#34;https://about.riot.im/&#34;&gt;Riot&lt;/a&gt;, which is recommended to use. Its fully
+featured and has support for voice and video chat, file sharing, among other things.
+Anyone who has used platforms like Slack and Discord will be comfortable with the
+interface. There are other clients available, but Riot is the most developed.&lt;/p&gt;
+&lt;h2 id=&#34;why-matrix-is-different&#34;&gt;Why Matrix is Different&lt;/h2&gt;
+&lt;p&gt;Unlike other instant messaging platforms, Matrix focuses on an interoperable protocol with open
+source implementations. Matrix puts the program that would run on a private instant messaging provider&amp;rsquo;s servers, in the hands of anyone
+who cares to download it. If you want your chat service to integrate with other services, like Slack or Discord, there
+are ready made &lt;a href=&#34;https://matrix.org/bridges/&#34;&gt;bridges&lt;/a&gt; for your server to do this. If you are suspicious, you can read the source code
+and build it yourself.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mattermost.com/&#34;&gt;Mattermost&lt;/a&gt; is an alternative to Matrix in the sense its open source and you can run your own server. Instead
+of focusing on interoperability, it adopts a traditional &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_as_a_service&#34;&gt;SaaS&lt;/a&gt; model. Since they are charging for
+the fully featured version, and is less ambitious in scope. I&amp;rsquo;d imagine its easier and more stable than Matrix.
+With a focus on interoperability and decentralization Matrix differentiates itself from Mattermost. If I didn&amp;rsquo;t think Matrix
+was going to work out for my use case, I&amp;rsquo;d look into Mattermost.&lt;/p&gt;
+&lt;p&gt;When signing up for Matrix, you will need to decide on a homeserver. You are welcome to
+host your own. matrix.org offers to host for free, but with the influx of people it tends to be slow.
+There is the option of paid hosting with &lt;a href=&#34;https://modular.im/services/matrix-hosting&#34;&gt;modular&lt;/a&gt;, provided by the creators.
+For the technically inclined, its relatively simple to host your own instance by following these
+&lt;a href=&#34;https://upcloud.com/community/tutorials/install-matrix-synapse/&#34;&gt;instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The homeserver will keep your messages, so if it goes down Matrix won&amp;rsquo;t work for you. The server will figure out how to transmit
+messages throughout the Matrix network to the people you communicate with, kinda like email. If you don&amp;rsquo;t want to get bogged down
+in the details, it doesn&amp;rsquo;t matter much what homeserver you choose. You will be able to participate in any conversation on the
+network regardless. Having many servers in a chat means there won&amp;rsquo;t be a single point of failure, leading to a robust design.&lt;/p&gt;
+&lt;h2 id=&#34;moderation&#34;&gt;Moderation&lt;/h2&gt;
+&lt;p&gt;The biggest issue with centralized platforms applies to decentralized ones, which is moderation. Currently, centralized
+platforms decide what is allowed to be said or not. With a decentralized one, it will be up to individuals to choose who they
+associate with.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think a centralized authority is able to deal with this satisfactorily. The volume these platforms deal
+with is beyond comprehension. Twitter has &lt;a href=&#34;https://www.omnicoreagency.com/twitter-statistics/&#34;&gt;500 million tweets&lt;/a&gt; a day for example.
+Any individual decision to remove a tweet is bound to met with criticism of censorship. Personal and organizational prejudice is
+bound to bias tricky judgement calls, scale makes it worse. I think small communities are able to do a better job in this regard.&lt;/p&gt;
+&lt;p&gt;I am aware of certain pathological communities, and I have empathy and appreciation for the people whose job is to deal with them.
+I recognize that decentralized communication technology benefits them as much as the rest of society. However, these people represent
+a small segment of the population. Most people want to be thoughtful, productive members of communities.
+I&amp;rsquo;d like to believe that those communities will develop a negative reputation with society at large and will be controlled that way.&lt;/p&gt;
+&lt;h2 id=&#34;monetization-and-value-creation&#34;&gt;Monetization and Value Creation&lt;/h2&gt;
+&lt;p&gt;The idea of a billboard transforming depending on the observer, forms the business model of more than one FANG company.
+It was this concept that set the direction for their technological developments. Business drives technology. Without a way to create
+and capture value tech is a mere hobby. Thinking about value creation and capture mechanisms is more important for success than
+technical details in my opinion. I think the key value proposition for Matrix is non-monetary in nature. Given recent events I
+suspect a message of self sufficiency would be effective at getting people to consider Matrix.&lt;/p&gt;
+&lt;p&gt;For some organizations, having communication take place on third party servers poses an operational risk. One example is the French Government
+who decided to use Matrix for their internal communications, more info can be found &lt;a href=&#34;https://matrix.org/blog/2018/04/26/matrix-and-riot-confirmed-as-the-basis-for-frances-secure-instant-messenger-app&#34;&gt;here&lt;/a&gt;. I suspect self hosting Matrix will appeal many organizations. Matrix is licensed under &lt;a href=&#34;https://www.apache.org/licenses/LICENSE-2.0&#34;&gt;Apache-2.0&lt;/a&gt;, so you are allowed to charge
+for providing services with a warranty as long as you assume responsibility.&lt;/p&gt;
+&lt;p&gt;Of course there can be pay to enter communities. I don&amp;rsquo;t think this is a good idea, but it illustrates an interesting point in
+psychology. The more expensive its costs to enter a community, the more valuable membership is. A community with a $100 per month
+membership fee will consist entirely of people with at least that much disposable income. The value of entry is the price of entry.
+Linguistically this is a reflexive relation, the subject becomes the object. It&amp;rsquo;s better with a more generalized measure of value.&lt;/p&gt;
+&lt;p&gt;If we measure value by the feeling of community, then an online community maximizes its value when its membership is
+in a Goldilocks range. With too few members it feels dead, too many, it feels like Reddit. I think Matrix will find
+many early adopters with people who want real online communities. In my experience, when walking by a stranger, its
+rare to be greeted in a city, yet common in a town. I think people want tightly knit communities, and Matrix seems like a
+good platform to make them on.&lt;/p&gt;
+&lt;h2 id=&#34;decompiled-community&#34;&gt;Decompiled Community&lt;/h2&gt;
+&lt;p&gt;To start with I want a comment section for my writing. If people start hanging around then I will consider what else it can be
+done. If you want to talk about this post come join &lt;a href=&#34;https://matrix.to/#/!jZNXorvoJygLOvNnAQ:matrix.decompiled.dev?via=matrix.decompiled.dev&#34;&gt;#matrix:matrix.decompiled.dev&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cryptos</title>
+      <link>http://decompiled.dev/crypto/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <author>eric@decompiled.dev (Eric Richardson)</author>
+      <guid>http://decompiled.dev/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://decompiled.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>eric@decompiled.dev (Eric Richardson)</author>
+      <guid>http://decompiled.dev/about/</guid>
+      <description>&lt;p&gt;The theme at Decompiled is broadly the intersection of people and computers. I aim to make current advancements and the history
+in of computers more accessible for a technically curious audience.&lt;/p&gt;
+&lt;p&gt;Decompiled is dedicated to the public domain. Meaning the work presented at decompiled.dev is as much yours as it is mine.
+You can do as you wish with it, except claim exclusive ownership.&lt;/p&gt;
+&lt;p&gt;Obviously I can&amp;rsquo;t grant ownership of other&amp;rsquo;s intellectual property to the public. I may unwittingly repeat
+something I read without proper citations. Copy freely, at your own risk.
+The material presented is intended for educational purposes only, and should in no way be construed as advice in any capacity.&lt;/p&gt;
+&lt;p&gt;I have a Matrix homeserver at matrix.decompiled.dev. If you need a client I&amp;rsquo;d recommend &lt;a href=&#34;https://about.riot.im/&#34;&gt;Riot&lt;/a&gt;
+Come join &lt;a href=&#34;https://matrix.to/#/!guvPSWAHEDmXmIBXGU:matrix.decompiled.dev?via=matrix.decompiled.dev&#34;&gt;#general:matrix.decompiled.dev&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tech&#34;&gt;Tech&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Generated with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Theme derived from &lt;a href=&#34;https://themes.gohugo.io/hugo-theme-sam/&#34;&gt;Sam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hosted on &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;typefaces&#34;&gt;Typefaces&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exo 2 as the display text&lt;/li&gt;
+&lt;li&gt;Cormorant Garamond as the body text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:eric@decompiled.dev&#34;&gt;eric@decompiled.dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mastodon: &lt;a href=&#34;https://mastodon.decompiled.dev/@neo&#34;&gt;@neo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter: &lt;a href=&#34;https://twitter.com/decompiled_dev&#34;&gt;@decompiled_dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS: &lt;a href=&#34;https://decompiled.dev/index.xml&#34;&gt;Here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

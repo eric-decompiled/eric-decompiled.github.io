@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Decompiled</title>
@@ -6,8 +5,10 @@
     <description>Recent content in Tags on Decompiled</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>eric@decompiled.dev (Eric Richardson)</managingEditor>
+    <webMaster>eric@decompiled.dev (Eric Richardson)</webMaster>
     
-	<atom:link href="http://decompiled.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://decompiled.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
