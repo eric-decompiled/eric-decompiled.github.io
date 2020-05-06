@@ -179,7 +179,88 @@ to help protect information entrusted to our care.&lt;/p&gt;
 It gives a historical overview of the history of zero knowledge proofs. It also mentions many papers for
 the curious.&lt;/p&gt;
 &lt;h4 id=&#34;comments&#34;&gt;Comments?&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://matrix.to/#/!QxQlPLwYhRpNPubvXg:matrix.decompiled.dev?via=matrix.decompiled.dev&#34;&gt;#halo.matrix.decompiled.dev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://matrix.to/#/!QxQlPLwYhRpNPubvXg:matrix.decompiled.dev?via=matrix.decompiled.dev&#34;&gt;#halo:matrix.decompiled.dev&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stories and Market Cap: The Value of Fiction</title>
+      <link>http://decompiled.dev/crypto/stories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>eric@decompiled.dev (Eric Richardson)</author>
+      <guid>http://decompiled.dev/crypto/stories/</guid>
+      <description>&lt;p&gt;Money has value because its valuable. To exchange value with currency is an act of faith that other people
+share your belief in the value of that currency. Its a shared narrative in society that gives currency its value,
+not technical implementation, and its not intrinsic.&lt;/p&gt;
+&lt;p&gt;Out of all the crypto currencies Bitcoin has proven to be the most valuable, and will likely remain that way for
+the foreseeable future. This value isn&amp;rsquo;t derived from the technical implementation, rather its legendary origin
+story. Bitcoin from a tech perspective is barely sufficient, it provides assurance that the properties of the
+network are good enough for a currency, but its a rather crude solution that is terribly inefficient. Even as
+crypto currencies maybe developed with better technical details, they will fail to surpass Bitcoin in terms of
+market cap unless they can create a stronger shared story. What Bitcoin lacks in technical sophistication it
+is the clear leader in narrative, and this is what lends financial value.&lt;/p&gt;
+&lt;h2 id=&#34;origin-of-btc&#34;&gt;Origin of BTC&lt;/h2&gt;
+&lt;p&gt;Bitcoin was born from the ashes of the 2008 financial crises. Its origin block has this inscribed&lt;/p&gt;
+&lt;blockquote&gt;
+    
+    
+    
+    The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.
+        &lt;footer&gt;
+            — &lt;cite&gt;Satoshi Nakamoto&lt;/cite&gt;
+        &lt;/footer&gt;
+    
+&lt;/blockquote&gt;
+
+&lt;p&gt;This sets the tone, and the date for the chain. It would take many years before Bitcoin would acquire real
+monetary value.&lt;/p&gt;
+&lt;p&gt;1 million bitcoin in satoshi wallet&lt;/p&gt;
+&lt;p&gt;preordained amount of bitcoin&lt;/p&gt;
+&lt;p&gt;The small band of early bitcoiners all shared the communitarian spirit of an open source software project. Gavin Andresen, a coder in New England, bought 10,000 bitcoins for $50 and created a site called the Bitcoin Faucet, where he gave them away for the hell of it. Laszlo Hanyecz, a Florida programmer, conducted what bitcoiners think of as the first real-world bitcoin transaction, paying 10,000 bitcoins to get two pizzas delivered from Papa John’s. (He sent the bitcoins to a volunteer in England, who then called in a credit card order transatlantically.) A farmer in Massachusetts named David Forster began accepting bitcoins as payment for alpaca socks. &lt;a href=&#34;https://web.archive.org/web/20131031043919/http://www.wired.com/magazine/2011/11/mf_bitcoin&#34;&gt;https://web.archive.org/web/20131031043919/http://www.wired.com/magazine/2011/11/mf_bitcoin&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Value common assets
+Common and accessible
+Constant utility
+Low cost of preservation
+Transportability
+Divisibility
+High market value in relation to volume and weight
+Recognisability
+Resistance to counterfeiting
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tech-stuff&#34;&gt;Tech stuff&lt;/h2&gt;
+&lt;h2 id=&#34;byzantine-faults&#34;&gt;Byzantine Faults&lt;/h2&gt;
+&lt;p&gt;The want of money is the root of all evil. People will cheat, lie, and steal when money is involved. This is
+where tech comes in. By combining various technologies its possible to prevent fatal flaws that would ruin the
+suspension of disbelief needed for storage of value. Tech plays a supporting role, it allows for a story that cannot
+be ruined by a few bad actors.&lt;/p&gt;
+&lt;p&gt;From a generalized technical perspective we need a Byzantine Fault Tolerant Replicated State Machine. Crypto currencies
+will use one of these and specialize it to act as a general ledger to keep track account balances, but its a more generalizable
+concept. By breaking down these terms we can get a better sense at what problem blockchains are trying to solve, and not worry
+about how they are doing it. It might seem like a big term, but by learning the stories that went into arriving at it it will
+make a lot more sense.&lt;/p&gt;
+&lt;h3 id=&#34;state-machines&#34;&gt;State Machines&lt;/h3&gt;
+&lt;p&gt;A state machine has two parts, data and operations. The operations that are allowed depend on the data, or the state of the machine.
+In the case of ledgers we want all transactions to be zero sum, and we don&amp;rsquo;t want accounts to go into the negative. The state is
+the balance of each account. We want this abstract machine to be replicated to prevent a single point of failure, and to democratize
+access to it. The simplest case of replication is commonly taught with an analogy to two generals. If we want a backup ledger in case
+the primary fails we need to ensure its synced with the primary.&lt;/p&gt;
+&lt;h3 id=&#34;two-generals&#34;&gt;Two Generals&lt;/h3&gt;
+&lt;p&gt;The two generals problem is a story that illustrates the difficulty in getting two different computers to agree on a result
+in real world conditions. Imagine two generals need to agree on a strategy, attack or retreat. Tech isn&amp;rsquo;t concerned with what
+is the better option, only that they agree on what they are doing. If one general sends a messenger saying they plan to attack
+they risk that messenger meeting an untimely end before delivering the message. Sending a message doesn&amp;rsquo;t mean the recipient
+will receive it. To counteract this, they might want to receive an acknowledgement from the recipient before they carry out
+with plans to attack. However this only shifts the uncertainty to the other general.&lt;/p&gt;
+&lt;p&gt;Practically speaking this can be solved by sending multiple messengers and acknowledging acknowledgements to arrive at
+arbitrary certainty by sending more and more messages. However its impossible to arrive at absolute certainty. This is
+known as the two generals problem. Given two processes that communicate over an unreliable connection its impossible
+to guarantee a shared world view. This is assuming generals are honest, and messages will not be forged.&lt;/p&gt;
+&lt;p&gt;Building on the concept of two generals, the problem is further generalized by having multiple officers coordinating an attack.
+The situation becomes Byzantine when we begin to consider the possibility of the enemy being one of the generals. The term Byzantine
+was chosen since its a posthumous name given to the Holy Roman Empire there is no risk of insult. A Byzantine general is a treasonous one.&lt;/p&gt;
+&lt;p&gt;In this case we want all of the generals to agree on a plan, but there is the possibility of traitors in the ranks. These traitors can
+lie, telling different generals different things, in an attempt to prevent an agreement being reached. In the case of distributed ledgers
+we are concerned with an agreement of everyone&amp;rsquo;s account balance, and people are incentivized to lie.&lt;/p&gt;
 </description>
     </item>
     
